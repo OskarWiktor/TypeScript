@@ -34,9 +34,11 @@ let person: { name: string; age: number } = {
 }
 
 // Function 
-const logNumber: (i: number) => void = (i) => {
-    console.log(i);
+const makeString: (s: string, b: string) => string = (s, b) => {
+    return `${s} ${b}`;
 }
+
+console.log(makeString('coś', 'tam'))
 
 // any type
 const json = '{"x": 10, "y": 20}'
