@@ -28,3 +28,35 @@ const printSummary = (item: Reportable): void => {
 
 printSummary(oldCivic);
 printSummary(pepsi);
+
+
+// interface vs type
+
+type UserType = {
+    name: string,
+    age: number
+}
+
+interface UserInter {
+    name: string,
+    age: number
+}
+
+
+type SType = { name: string } | { age: number }
+
+interface SInter {
+    name: string
+    // or niemożliwe
+}
+
+interface User {
+    name: string
+}
+interface User {
+    age: number
+}
+const user: User = {
+    name: 'John',
+    age: 30
+}
